@@ -17,3 +17,4 @@ These are packages the project is built upon. I suggest first creating a `virtua
 * Werkzeug (0.11.15)
 * wheel (0.24.0)
 * cx_Oracle (5.3)
+* flask-login (0.4.0)
