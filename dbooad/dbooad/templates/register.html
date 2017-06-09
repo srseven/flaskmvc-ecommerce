@@ -1,0 +1,45 @@
+{% extends "login.html" %}
+{% block title %}<title> Register | E-Shopper </title>{% endblock %}
+{% block login %}<li><a href="login.html" class="active"><i class="fa fa-lock"></i>Login</a></li>{% endblock %}
+{% block content %}
+    <section id="form">
+    <div class="container">
+    <div class="row">
+        <div class="signup-form"><!--sign up form-->
+            <h2>New User Signup!</h2>
+            {% for message in form.firstname.errors %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+
+            {% for message in form.lastname.errors %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+
+            {% for message in form.email.errors %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+
+            {% for message in form.password.errors %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+            <form method="post" action = "{{ url_for('register') }}">
+                {{ form.firstname.label }}
+                {{ form.firstname }}
+
+                {{ form.lastname.label }}
+                {{ form.lastname }}
+
+                {{ form.email.label }}
+                {{ form.email(required = True) }}
+
+                {{ form.password.label }}
+                {{ form.password }}
+
+                {{ form.submit }}
+            </form>
+        </div><!--/sign up form-->
+    </div>
+    </div>
+    </section>
+{% endblock %}
+
