@@ -1,5 +1,5 @@
 # flaskmvc-ecommerce
-An extensive ecommerce website with a Python Flask framework and Oracle Database 11g backend and an HTML5, CSS3 (Bootstrap) and JavaScript (jQuery) frontend based on Model View Controller (MVC) pattern. This was made as semester project of my Database Systems (DB) and Object Oriented Analysis and Design (OOAD) courses. This project is work inprogress and can be used as an extensive boilerplate when starting out an ecommerce website with Flask.
+An extensive ecommerce website with a Python Flask framework and Oracle Database 11g backend and an HTML5, CSS3 (Bootstrap) and JavaScript (jQuery) frontend based on Model View Controller (MVC) pattern. This was made as a semester project of my Database Systems (DB) and Object Oriented Analysis and Design (OOAD) courses. This project is work in-progress and can be used as an extensive boilerplate when starting out an ecommerce website with Flask.
 
 # Dependencies:
 These are packages the project is built upon. I suggest first creating a `virtualenv` and then installing these packages inside it to avoid version conflicts with global Python package installs.
